@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AppAula06_21905496</string>
+    <string name="login_btn">Login</string>
+    <string name="login_user_hint">Your username here!</string>
+    <string name="login_pass_hint">Your Password here!</string>
+    <string name="login_error">Autentication Error!</string>
+    <string name="main_button_edit">Edit</string>
+    <string name="main_button_camera">Camera</string>
+    <string name="main_text_nome">Nome</string>
+    <string name="edit_nome_hint">Nome ??</string>
+    <string name="edid_btn_voltar">Voltar</string>
+</resources>
