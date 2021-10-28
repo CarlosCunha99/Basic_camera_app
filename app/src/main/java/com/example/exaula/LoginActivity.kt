@@ -7,11 +7,18 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import  androidx.lifecycle.ViewModelProvider
 
 class LoginActivity : AppCompatActivity() {
+
+    private lateinit var loginViewModel: LoginViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        loginViewModel =
+            ViewModelProvider(this).get(LoginViewModel::class.java)
 
         configurar()
     }
@@ -23,14 +30,12 @@ class LoginActivity : AppCompatActivity() {
         if(validarDadosAutenticar()) showMainActivity()
         else showLoginError()
     }
-    private fun validarDadosAutenticar():Boolean{
+    private fun validarDadosAutenticar(): Boolean {
+
         val user: String = findViewById<EditText>(R.id.login_user).text.toString()
         val pass: String = findViewById<EditText>(R.id.login_password).text.toString()
 
-        return if( pass.isEmpty() || user.isEmpty())
-            false;
-        else
-            user == pass
+        return loginViewModel.validarDadosAutenticar(user, pass)
     }
     private fun showMainActivity(){
         val intent = Intent(this, MainActivity::class.java)
