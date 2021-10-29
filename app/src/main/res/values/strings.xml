@@ -9,4 +9,5 @@
     <string name="main_text_nome">Nome</string>
     <string name="edit_nome_hint">Nome ??</string>
     <string name="edid_btn_voltar">Voltar</string>
+    <string name="autentication_button">Login Using Biometrics</string>
 </resources>

@@ -41,12 +41,11 @@
             android:layout_height="72dp"
             android:text="@string/login_btn" />
 
-        <TextView
-            android:id="@+id/login_error"
+        <Button
+            android:id="@+id/biometrics_Button"
             android:layout_width="match_parent"
-            android:layout_height="88dp"
-            android:text="@string/login_error"
-            android:visibility="invisible" />
+            android:layout_height="wrap_content"
+            android:text="@string/autentication_button" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
     //Edit
     private fun showEdit(){
         val intent = Intent(this, EditActivity::class.java)
-        startActivityForResult(intent,101)
+        startActivityForResult(intent, 1001)
     }
 
 
